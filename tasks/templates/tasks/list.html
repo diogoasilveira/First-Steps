@@ -64,8 +64,12 @@
 
 			{% if task.complete == True %}
 			<strike>{{task}}</strike>
+			<br>
+			<span>Criado em: {{task.created_date}}</span>
 			{% else %}
 			<span>{{task}}</span>
+			<br>
+			<span>Criado em: {{task.created_date}}</span>
 			{% endif %}
 		</div>
 	{% endfor %}
